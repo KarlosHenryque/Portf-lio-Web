@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvedor</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=16427&format=png&color=000000" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header >
+    <header>
         <nav class="container">
-            <div class="logo"> KH </div>
+            <div class="logo">KH</div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -20,95 +26,92 @@
     </header>
 
     <main>
-       <section id="sobre" class="dev container fade-in">
+        <section id="sobre" class="dev container">
             <div class="dev-texto">
                 <h1>Karlos Henryque</h1>
-                <p>Eu sou um desenvolver full-stack, especializa em criar aplicações web bonitas e funcionas.</p>
+                <p>Desenvolvedor júnior apaixonado por tecnologia, em transição para full-stack web. Experiência em backend com Java e Spring Boot, e conhecimentos em front-end com HTML, CSS e JavaScript. Busco aprimorar habilidades, aprender novas tecnologias e contribuir para projetos inovadores, com foco em boas práticas e desenvolvimento contínuo.</p>
                 <a class="botao-de-contato" href="#contato">Entre em contato</a>
             </div>
-
             <div class="dev-imagem">
-                <img src="/dude.png" class="imagem-perfil">
+                <img src="/dude.png" alt="Imagem de Karlos Henryque" class="imagem-perfil">
             </div>
-       </section> 
+        </section> 
 
-       <section id="skills" class="container fade-in">
-            <h2> Skills</h2>
+        <section id="skills" class="container">
+            <h2>Habilidades</h2>
             <div class="skills-grid">
-                <div class="skills-item">
+                <div class="skill-item">
                     <div class="skill-icon">&#128187;</div>
                     <h3>Frontend</h3>
-                    <p>Html, Css, Javascript</p>
+                    <p>HTML, CSS, JavaScript</p>
                 </div>
-
-                <div class="skills-item">
+                <div class="skill-item">
                     <div class="skill-icon">&#128295;</div>
                     <h3>Backend</h3>
-                    <p>Java C++ </p>
+                    <p>Java, C++, Php</p>
                 </div>
-
-            <div class="skills-item">
-                <div class="skill-icon">&#128736;</div>
-                <h3>Ferramentas</h3>
-                <p>Git</p>
-            </div>
-       </section>
-
-       <section id="projetos" class="container fade-in">
-        <h2> Projetos </h2>
-        <div class="projetos-grid">
-            <div class="projeto-card"> 
-                <h3 class="titulo-projeto"> Site de ecommerce </h3>
-                <p> Plataforma de comércio eletrônico totalmente esponsiva com autenticação de usuário de ingreção de pagamento. </p>
-                <div class="projeto-tags">
-                    <span> React </span>
-                    <span> Node.js </span>
-                    <span> MongoDB </span>
+                <div class="skill-item">
+                    <div class="skill-icon">&#128202;</div>
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">&#128736;</div>
+                    <h3>Ferramentas</h3>
+                    <p>Git</p>
                 </div>
             </div>
-            <div class="projeto-card">
-                <h3 class="titulo-projeto"> App de Gerenciamento de Tarefas </h3>
-                <p> Uma aplicação de produtividade pra gerenciar tarefas e projetos com atualizações em tempo real e recursos de colaboração de equipes </p>
-                <div  class="projeto-tags">
-                    <span> React </span>
-                    <span> Firebase </span>
-                    <span> Material UI </span>
+        </section>
 
+        <section id="projetos" class="container">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card"> 
+                    <h3 class="titulo-projeto">Workshop</h3>
+                    <p>é uma aplicação backend que cria uma API RESTful para gerenciar usuários, pedidos, produtos e categorias. Utilizando Spring Data JPA e Hibernate, o projeto implementa operações CRUD e mapeamento objeto-relacional (ORM). <br><a href="https://github.com/KarlosHenryque/workshop-springboot3-jpa">Acessar</a></p>
+                    <div class="projeto-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Data JPA</span>
+                    </div>
                 </div>
-
-            </div>
-            <div class="projeto-card">
-                <h3 class="titulo-projeto"> Dashboard clime </h3>
-                <p> Aplicação de tempo interativa que exibe dados meteorológicos atuais e previstos usando uma API </p>
-                <div class="projeto-tags">
-                    <span> Javascript </span>
-                    <span> API </span>
-                    <span> Chart.js </span>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Gerador de Etiqueta </h3>
+                    <p>Aplicação desenvolvida em Java que tem como objetivo gerar etiquetas para produtos. Ele contém classes que representam diferentes tipos de produtos, como ProdutoImportado e ProdutoUsado, e é projetado para demonstrar como organizar e processar essas informações de maneira simples e eficaz. <br><a href="https://github.com/KarlosHenryque/Gerador-de-Etiqueta">Acessar</a></p>
+                    <div class="projeto-tags">
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Banco Try-Catch</h3>
+                    <p>Aplicação simples em Java que simula o funcionamento de um banco com operações básicas, como depósitos e retiradas, utilizando a estrutura de tratamento de exceções. <br><a href="https://github.com/KarlosHenryque/Banco">Acessar</a></p>
+                    <div class="projeto-tags">
+                        <span>Java</span>
+                        <span>Try-Catch</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contato" class="contato fade in">
-        <h2 class="titulo-contato"> Contate-me!</h2>
-        <form class="contato-form">
-            <div class="grupo-formulario">
-                <label for="nome">Nome </label>
+        <section id="contato" class="contato">
+            <h2 class="titulo-contato">Contate-me!</h2>
+            <form class="contato-form">
+                <div class="grupo-formulario">
+                    <label for="nome">Nome</label>
                     <input id="nome" name="nome" required>
-            </div>
-
-            <div class="grupo-formulario">
-                <label for="email">E-mail</label>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">E-mail</label>
                     <input id="email" name="email" required>
-            </div>
-
-            <div class="grupo-formulario">
-                <label for="mensagem">Mensagem</label>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" required></textarea>
-            </div>
-            <button type="submit">Mandar mensagem</button>
-        </form>
-    </section>
+                </div>
+                <button type="submit">Mandar mensagem</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <ul class="icones-footer">
@@ -116,8 +119,9 @@
             <li>&#128101;</li>
             <li>&#128038;</li>
         </ul>
-        <p>&copy 2025 Karlos Henryque. Todos os direitos reservados</p>
+        <p>&copy; <a href="https://github.com/KarlosHenryque" target="_blank">2025 Karlos Henryque</a>.</p>
     </footer>
-    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
